@@ -88,3 +88,9 @@ body {
   background-color: var(--color-siteground) !important;
   color: var(--color-siteink) !important;
 }
+
+/* Custom map marker styles */
+.custom-map-marker {
+  background: transparent !important;
+  border: none !important;
+}

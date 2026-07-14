@@ -39,6 +39,34 @@ export default function App() {
     setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
   }, []);
 
+  // Initialize interactive Leaflet map
+  useEffect(() => {
+    const L = (window as any).L;
+    if (!L) return;
+    const mapContainer = document.getElementById("map");
+    if (!mapContainer) return;
+
+    const map = L.map("map", { scrollWheelZoom: false }).setView([12.3037308, 76.6905694], 16);
+
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+    }).addTo(map);
+
+    const customIcon = L.divIcon({
+      className: "custom-map-marker",
+      html: `<div class="w-8 h-8 rounded-full bg-siteaccent/20 border-2 border-siteaccent flex items-center justify-center"><div class="w-3 h-3 rounded-full bg-siteaccent"></div></div>`,
+      iconSize: [32, 32],
+      iconAnchor: [16, 16]
+    });
+
+    const marker = L.marker([12.3037308, 76.6905694], { icon: customIcon }).addTo(map);
+    marker.bindPopup("<b>Sukruthi Dental and Oral Care</b><br/>Lalitha Arcade, Siddarthanagar, Mysore").openPopup();
+
+    return () => {
+      map.remove();
+    };
+  }, []);
+
   // GSAP animations for Hero & sticky sections
   useEffect(() => {
     if (reduced) return;
@@ -767,7 +795,7 @@ Time: ${bookingDetails.time}
 
             <div className="relative z-10 w-full max-w-[1360px] mx-auto px-6 md:px-10 py-32 flex flex-col md:flex-row justify-between items-start md:items-stretch gap-12">
               {/* Info Card */}
-              <div className="w-full max-w-md bg-sitesurface border sx-hairline p-8 rounded-3xl shadow-xl">
+              <div className="w-full max-w-md bg-sitesurface border sx-hairline p-8 rounded-3xl shadow-xl z-10">
                 <span className="text-xs font-bold tracking-widest uppercase text-siteaccent block mb-2">Visit Clinic</span>
                 <h2 className="font-display text-3xl font-extrabold mb-6">Sukruthi Dental</h2>
                 <div className="space-y-6 text-xs leading-relaxed text-sitemuted">
@@ -796,6 +824,9 @@ Time: ${bookingDetails.time}
                   </button>
                 </div>
               </div>
+
+              {/* Interactive Map */}
+              <div id="map" className="w-full h-[300px] md:h-auto md:flex-1 rounded-3xl overflow-hidden border sx-hairline shadow-xl z-10" style={{ minHeight: "350px" }} />
             </div>
           </section>
         </main>
