@@ -358,6 +358,7 @@ Time: ${bookingDetails.time}
                     desc: "Precision pulp clearing and bio-compatible sealing using computerized systems.",
                     details: "At Sukruthi Dental and Oral Care, Dr. Mahesh M. S. performs precision root canals using advanced computerized endodontic equipment. The procedure is painless and preserves the structural integrity of your natural tooth.",
                     iconImage: "/assets/icons/icon-rct.png",
+                    serviceImage: "/assets/service-rct.jpg",
                   },
                   {
                     title: "Tooth Whitening",
@@ -365,6 +366,7 @@ Time: ${bookingDetails.time}
                     desc: "Medical-grade bleaching activating enamel protection and instant stain removal.",
                     details: "Dissolve stains caused by caffeine, tea, foods, tobacco, or aging. In-clinic light whitening targets 6-8 shades lighter safely inside one hour.",
                     iconImage: "/assets/icons/icon-whitening.png",
+                    serviceImage: "/assets/service-whitening.jpg",
                   },
                   {
                     title: "Dental Braces Fixing",
@@ -372,6 +374,7 @@ Time: ${bookingDetails.time}
                     desc: "Skeletal orthodontics with traditional, ceramic, or invisible aligners.",
                     details: "Correct teeth alignment, crowding, spacing, and bite issues. We offer personalized brace options and periodic tracking.",
                     iconImage: "/assets/icons/icon-braces.png",
+                    serviceImage: "/assets/service-braces.jpg",
                   },
                   {
                     title: "Laser Gum Surgery",
@@ -379,6 +382,7 @@ Time: ${bookingDetails.time}
                     desc: "Surgical soft-tissue laser restoration eliminating bleeding and suturing.",
                     details: "Advanced lasers sterilize soft tissues, eliminating scalpels, needles, and stitches. The healing curve is drastically shorter.",
                     iconImage: "/assets/icons/icon-laser.png",
+                    serviceImage: "/assets/service-laser.jpg",
                   },
                   {
                     title: "Pits & Fissures Sealants",
@@ -386,6 +390,7 @@ Time: ${bookingDetails.time}
                     desc: "Thin resin coatings on back molars to safeguard against decay.",
                     details: "Ideal preventive dental protection for school-going children. Keeps Molars shielded from bacteria and plaque build-up.",
                     iconImage: "/assets/icons/icon-sealants.png",
+                    serviceImage: "/assets/service-sealants.jpg",
                   },
                   {
                     title: "Impacted Tooth Extraction",
@@ -393,6 +398,7 @@ Time: ${bookingDetails.time}
                     desc: "Removal of wisdom teeth trapped under gums, relieving alignment stress.",
                     details: "Safe surgical tooth extraction mapping root nerves via low-radiation X-rays. Minimizes bone damage and speeds post-op recovery.",
                     iconImage: "/assets/icons/icon-extraction.png",
+                    serviceImage: "/assets/service-extraction.jpg",
                   },
                 ].map((item, idx) => {
                   const isOpen = openOffering === idx;
@@ -425,18 +431,25 @@ Time: ${bookingDetails.time}
                         style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
                       >
                         <div className="overflow-hidden">
-                          <div className="px-6 pb-6 pt-2 border-t sx-hairline text-sm text-sitemuted leading-relaxed space-y-4">
-                            <p>{item.desc}</p>
-                            <p>{item.details}</p>
-                            <div className="flex gap-4 pt-2">
-                              <a
-                                href={`https://wa.me/919844170621?text=${encodeURIComponent("I want to ask about: " + item.title)}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 text-xs font-bold text-siteaccent hover:underline"
-                              >
-                                Ask via WhatsApp <span aria-hidden="true">→</span>
-                              </a>
+                          <div className="px-6 pb-6 pt-2 border-t sx-hairline text-sm text-sitemuted leading-relaxed">
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start pt-2">
+                              <div className="md:col-span-8 space-y-4">
+                                <p>{item.desc}</p>
+                                <p>{item.details}</p>
+                                <div className="flex gap-4 pt-2">
+                                  <a
+                                    href={`https://wa.me/919844170621?text=${encodeURIComponent("I want to ask about: " + item.title)}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 text-xs font-bold text-siteaccent hover:underline"
+                                  >
+                                    Ask via WhatsApp <span aria-hidden="true">→</span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div className="md:col-span-4 w-full h-[140px] md:h-[180px] rounded-xl overflow-hidden border sx-hairline">
+                                <img src={item.serviceImage} alt={item.title} className="w-full h-full object-cover" />
+                              </div>
                             </div>
                           </div>
                         </div>
