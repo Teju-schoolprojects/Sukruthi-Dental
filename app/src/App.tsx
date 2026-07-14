@@ -9,11 +9,11 @@ import { Nav } from "./components/site/Nav";
 function IconRct() {
   return (
     <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M7 3C7 3 5.5 5 5.5 8C5.5 12 7.5 14 7.5 17C7.5 20 6.5 21 6.5 21" />
-      <path d="M17 3C17 3 18.5 5 18.5 8C18.5 12 16.5 14 16.5 17C16.5 20 17.5 21 17.5 21" />
-      <path d="M12 3v12" />
-      <path d="M10 8h4" />
-      <path d="M10 12h4" />
+      <path d="M6 3c1.5 0 2.5 1.5 2.5 4.5v1.5c0 3-3.5 5.5-3.5 8.5C5 20.5 6 21 6.5 21" />
+      <path d="M18 3c-1.5 0-2.5 1.5-2.5 4.5v1.5c0 3 3.5 5.5 3.5 8.5c0 3-1 3.5-1.5 3.5" />
+      <path d="M8.5 7.5c2 1 5 1 7 0" />
+      <path d="M12 9v6c0 1.5-.5 3-1.5 4" strokeDasharray="1.5 1.5" />
+      <path d="M12 11c0 1.5.5 3 1.5 4" strokeDasharray="1.5 1.5" />
     </svg>
   );
 }
@@ -21,8 +21,10 @@ function IconRct() {
 function IconWhitening() {
   return (
     <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" />
-      <circle cx="12" cy="12" r="4" />
+      <path d="M8 8.5c.5-.8 1.5-1.5 3-1.5s2.5.7 3 1.5c1 1.5.5 5.5-1.5 7s-1.5 2.5-1.5 2.5h-2s0-1-1.5-2.5S5.5 10 6.5 8.5z" />
+      <path d="M18 4l0.5 1 1 0.5-1 0.5-0.5 1-0.5-1-1-0.5 1-0.5z" fill="currentColor" stroke="none" />
+      <path d="M4 14l0.4 0.8 0.8 0.4-0.8 0.4-0.4 0.8-0.4-0.8-0.8-0.4 0.8-0.4z" fill="currentColor" stroke="none" />
+      <path d="M16 16l0.3 0.6 0.6 0.3-0.6 0.3-0.3 0.6-0.3-0.6-0.6-0.3 0.6-0.3z" fill="currentColor" stroke="none" />
     </svg>
   );
 }
@@ -30,13 +32,11 @@ function IconWhitening() {
 function IconBraces() {
   return (
     <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M4 10h16M4 14h16M7 8v8M12 8v8M17 8v8" />
-      <rect x="5" y="9" width="4" height="2" rx="0.5" />
-      <rect x="10" y="9" width="4" height="2" rx="0.5" />
-      <rect x="15" y="9" width="4" height="2" rx="0.5" />
-      <rect x="5" y="13" width="4" height="2" rx="0.5" />
-      <rect x="10" y="13" width="4" height="2" rx="0.5" />
-      <rect x="15" y="13" width="4" height="2" rx="0.5" />
+      <path d="M3 12c4-3 14-3 18 0" />
+      <rect x="5" y="9.5" width="3" height="5" rx="1" />
+      <rect x="10.5" y="8.5" width="3" height="5" rx="1" />
+      <rect x="16" y="9.5" width="3" height="5" rx="1" />
+      <path d="M6.5 12h11" />
     </svg>
   );
 }
@@ -44,9 +44,12 @@ function IconBraces() {
 function IconLaser() {
   return (
     <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M3 12h18M12 3v18" />
-      <circle cx="12" cy="12" r="7" strokeDasharray="3 3" />
+      <path d="M19 5l-6 6" />
+      <path d="M14.5 5.5l4 4" />
+      <path d="M10 12c-2.5-1-5.5-1-8 0" />
       <circle cx="12" cy="12" r="2" fill="currentColor" />
+      <path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" strokeDasharray="2 2" />
+      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" strokeDasharray="3 3" />
     </svg>
   );
 }
@@ -54,8 +57,8 @@ function IconLaser() {
 function IconSealants() {
   return (
     <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      <path d="M9 11l2 2 4-4" />
+      <path d="M6 10c1-2 2-3 4-3h4c2 0 3 1 4 3 1 2 0 6-2 8s-2 2.5-2 2.5h-4s0-1.5-2-2.5S5 12 6 10z" />
+      <path d="M12 4c2.5 0 4.5.5 4.5.5v3c0 2.5-2 4-4.5 5S7.5 10 7.5 7.5v-3S9.5 4 12 4z" />
     </svg>
   );
 }
@@ -63,8 +66,19 @@ function IconSealants() {
 function IconImplants() {
   return (
     <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 3v12M9 6h6M9 10h6M10 18h4M11 21h2" />
-      <path d="M7 3h10v2c0 2-2 3-5 3s-5-1-5-3V3z" />
+      <path d="M8 5c1-1.5 2-2 4-2s3 .5 4 2c1 1.5.5 3.5-1 4.5S12 11 12 11h-0.5s-2.5-1-1.5-2.5S7 6.5 8 5z" />
+      <path d="M12 11v8" />
+      <path d="M10 13h4M9.5 15.5h5M10.5 17.5h3" />
+    </svg>
+  );
+}
+
+function IconExtraction() {
+  return (
+    <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M6 10c0-3 2-4 6-4s6 1 6 4c0 2.5-1.5 4.5-1.5 4.5S15 16 15 18H9s0-2-1.5-3.5S6 12.5 6 10z" />
+      <path d="M12 12V3" />
+      <path d="M9 6l3-3 3 3" />
     </svg>
   );
 }
@@ -443,7 +457,7 @@ Time: ${bookingDetails.time}
                     duration: "40 mins",
                     desc: "Removal of wisdom teeth trapped under gums, relieving alignment stress.",
                     details: "Safe surgical tooth extraction mapping root nerves via low-radiation X-rays. Minimizes bone damage and speeds post-op recovery.",
-                    icon: <IconImplants />,
+                    icon: <IconExtraction />,
                   },
                 ].map((item, idx) => {
                   const isOpen = openOffering === idx;
