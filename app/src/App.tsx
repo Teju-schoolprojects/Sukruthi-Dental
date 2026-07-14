@@ -6,79 +6,12 @@ import { FilmVideo } from "./components/site/FilmVideo";
 import { Nav } from "./components/site/Nav";
 
 // Inline SVG Icon Components
-function IconRct() {
-  return (
-    <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M6 3c1.5 0 2.5 1.5 2.5 4.5v1.5c0 3-3.5 5.5-3.5 8.5C5 20.5 6 21 6.5 21" />
-      <path d="M18 3c-1.5 0-2.5 1.5-2.5 4.5v1.5c0 3 3.5 5.5 3.5 8.5c0 3-1 3.5-1.5 3.5" />
-      <path d="M8.5 7.5c2 1 5 1 7 0" />
-      <path d="M12 9v6c0 1.5-.5 3-1.5 4" strokeDasharray="1.5 1.5" />
-      <path d="M12 11c0 1.5.5 3 1.5 4" strokeDasharray="1.5 1.5" />
-    </svg>
-  );
-}
-
-function IconWhitening() {
-  return (
-    <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M8 8.5c.5-.8 1.5-1.5 3-1.5s2.5.7 3 1.5c1 1.5.5 5.5-1.5 7s-1.5 2.5-1.5 2.5h-2s0-1-1.5-2.5S5.5 10 6.5 8.5z" />
-      <path d="M18 4l0.5 1 1 0.5-1 0.5-0.5 1-0.5-1-1-0.5 1-0.5z" fill="currentColor" stroke="none" />
-      <path d="M4 14l0.4 0.8 0.8 0.4-0.8 0.4-0.4 0.8-0.4-0.8-0.8-0.4 0.8-0.4z" fill="currentColor" stroke="none" />
-      <path d="M16 16l0.3 0.6 0.6 0.3-0.6 0.3-0.3 0.6-0.3-0.6-0.6-0.3 0.6-0.3z" fill="currentColor" stroke="none" />
-    </svg>
-  );
-}
-
-function IconBraces() {
-  return (
-    <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M3 12c4-3 14-3 18 0" />
-      <rect x="5" y="9.5" width="3" height="5" rx="1" />
-      <rect x="10.5" y="8.5" width="3" height="5" rx="1" />
-      <rect x="16" y="9.5" width="3" height="5" rx="1" />
-      <path d="M6.5 12h11" />
-    </svg>
-  );
-}
-
-function IconLaser() {
-  return (
-    <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M19 5l-6 6" />
-      <path d="M14.5 5.5l4 4" />
-      <path d="M10 12c-2.5-1-5.5-1-8 0" />
-      <circle cx="12" cy="12" r="2" fill="currentColor" />
-      <path d="M12 12m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" strokeDasharray="2 2" />
-      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" strokeDasharray="3 3" />
-    </svg>
-  );
-}
-
-function IconSealants() {
-  return (
-    <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M6 10c1-2 2-3 4-3h4c2 0 3 1 4 3 1 2 0 6-2 8s-2 2.5-2 2.5h-4s0-1.5-2-2.5S5 12 6 10z" />
-      <path d="M12 4c2.5 0 4.5.5 4.5.5v3c0 2.5-2 4-4.5 5S7.5 10 7.5 7.5v-3S9.5 4 12 4z" />
-    </svg>
-  );
-}
-
 function IconImplants() {
   return (
     <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M8 5c1-1.5 2-2 4-2s3 .5 4 2c1 1.5.5 3.5-1 4.5S12 11 12 11h-0.5s-2.5-1-1.5-2.5S7 6.5 8 5z" />
       <path d="M12 11v8" />
       <path d="M10 13h4M9.5 15.5h5M10.5 17.5h3" />
-    </svg>
-  );
-}
-
-function IconExtraction() {
-  return (
-    <svg className="w-8 h-8 stroke-siteaccent fill-none" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M6 10c0-3 2-4 6-4s6 1 6 4c0 2.5-1.5 4.5-1.5 4.5S15 16 15 18H9s0-2-1.5-3.5S6 12.5 6 10z" />
-      <path d="M12 12V3" />
-      <path d="M9 6l3-3 3 3" />
     </svg>
   );
 }
@@ -422,42 +355,42 @@ Time: ${bookingDetails.time}
                     duration: "45 mins",
                     desc: "Precision pulp clearing and bio-compatible sealing using computerized systems.",
                     details: "At Sukruthi Dental and Oral Care, Dr. Mahesh M. S. performs precision root canals using advanced computerized endodontic equipment. The procedure is painless and preserves the structural integrity of your natural tooth.",
-                    icon: <IconRct />,
+                    thumbnail: "/assets/service-rct.jpg",
                   },
                   {
                     title: "Tooth Whitening",
                     duration: "60 mins",
                     desc: "Medical-grade bleaching activating enamel protection and instant stain removal.",
                     details: "Dissolve stains caused by caffeine, tea, foods, tobacco, or aging. In-clinic light whitening targets 6-8 shades lighter safely inside one hour.",
-                    icon: <IconWhitening />,
+                    thumbnail: "/assets/service-whitening.jpg",
                   },
                   {
                     title: "Dental Braces Fixing",
                     duration: "Varies",
                     desc: "Skeletal orthodontics with traditional, ceramic, or invisible aligners.",
                     details: "Correct teeth alignment, crowding, spacing, and bite issues. We offer personalized brace options and periodic tracking.",
-                    icon: <IconBraces />,
+                    thumbnail: "/assets/service-braces.jpg",
                   },
                   {
                     title: "Laser Gum Surgery",
                     duration: "30 mins",
                     desc: "Surgical soft-tissue laser restoration eliminating bleeding and suturing.",
                     details: "Advanced lasers sterilize soft tissues, eliminating scalpels, needles, and stitches. The healing curve is drastically shorter.",
-                    icon: <IconLaser />,
+                    thumbnail: "/assets/service-laser.jpg",
                   },
                   {
                     title: "Pits & Fissures Sealants",
                     duration: "15 mins",
                     desc: "Thin resin coatings on back molars to safeguard against decay.",
                     details: "Ideal preventive dental protection for school-going children. Keeps Molars shielded from bacteria and plaque build-up.",
-                    icon: <IconSealants />,
+                    thumbnail: "/assets/service-sealants.jpg",
                   },
                   {
                     title: "Impacted Tooth Extraction",
                     duration: "40 mins",
                     desc: "Removal of wisdom teeth trapped under gums, relieving alignment stress.",
                     details: "Safe surgical tooth extraction mapping root nerves via low-radiation X-rays. Minimizes bone damage and speeds post-op recovery.",
-                    icon: <IconExtraction />,
+                    thumbnail: "/assets/service-extraction.jpg",
                   },
                 ].map((item, idx) => {
                   const isOpen = openOffering === idx;
@@ -471,8 +404,8 @@ Time: ${bookingDetails.time}
                         className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
                       >
                         <div className="flex items-center gap-4">
-                          <div className="w-12 h-12 rounded-xl bg-siteground flex items-center justify-center">
-                            {item.icon}
+                          <div className="w-12 h-12 rounded-xl overflow-hidden shrink-0 border sx-hairline bg-siteground">
+                            <img src={item.thumbnail} alt="" className="w-full h-full object-cover" />
                           </div>
                           <div>
                             <h3 className="font-display text-lg font-bold">{item.title}</h3>
