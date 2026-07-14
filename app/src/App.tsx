@@ -16,78 +16,7 @@ function IconImplants() {
   );
 }
 
-// Colored Graphic Illustration Components
-function GraphicRct() {
-  return (
-    <svg className="w-10 h-10 shrink-0" viewBox="0 0 64 64" fill="none">
-      <rect width="64" height="64" rx="12" fill="#EBF6F6" />
-      <path d="M22 14c4 0 5 3 5 8v6c0 10-10 14-10 24 0 4 3 6 4 6" stroke="#0E6E73" strokeWidth="2.5" strokeLinecap="round" />
-      <path d="M42 14c-4 0-5 3-5 8v6c0 10 10 14 10 24 0 4-3 6-4 6" stroke="#0E6E73" strokeWidth="2.5" strokeLinecap="round" />
-      <path d="M27 28c2 1 6 1 10 0" stroke="#0E6E73" strokeWidth="2.5" />
-      <path d="M32 20c-1.5 2-2.5 5-2.5 9s1 6 2 9" stroke="#FF5A5F" strokeWidth="3" strokeLinecap="round" />
-      <path d="M32 29v17" stroke="#3D9BFF" strokeWidth="3" strokeLinecap="round" />
-    </svg>
-  );
-}
 
-function GraphicWhitening() {
-  return (
-    <svg className="w-10 h-10 shrink-0" viewBox="0 0 64 64" fill="none">
-      <rect width="64" height="64" rx="12" fill="#EBF6F6" />
-      <path d="M24 16c2 0 4 1.5 4 4.5v3c0 5-5 7-5 12s2 4.5 2.5 4.5h13s.5-.5 2.5-4.5-5-7-5-12v-3c0-3 2-4.5 4-4.5" stroke="#0E6E73" strokeWidth="2.5" strokeLinecap="round" />
-      <path d="M46 14l1.5 3.5 3.5 1.5-3.5 1.5-1.5 3.5-1.5-3.5-3.5-1.5 3.5-1.5z" fill="#F9C74F" />
-      <path d="M16 38l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" fill="#F9C74F" />
-      <circle cx="32" cy="32" r="5" fill="#3D9BFF" opacity="0.2" />
-    </svg>
-  );
-}
-
-function GraphicBraces() {
-  return (
-    <svg className="w-10 h-10 shrink-0" viewBox="0 0 64 64" fill="none">
-      <rect width="64" height="64" rx="12" fill="#EBF6F6" />
-      <path d="M12 32c8-5 32-5 40 0" stroke="#B0C4DE" strokeWidth="3" />
-      <path d="M16 24v16M26 22v18M38 22v18M48 24v16" stroke="#0E6E73" strokeWidth="2.5" strokeLinecap="round" />
-      <rect x="23" y="28" width="6" height="8" rx="1" fill="#3D9BFF" stroke="#0E6E73" strokeWidth="1.5" />
-      <rect x="35" y="28" width="6" height="8" rx="1" fill="#3D9BFF" stroke="#0E6E73" strokeWidth="1.5" />
-    </svg>
-  );
-}
-
-function GraphicLaser() {
-  return (
-    <svg className="w-10 h-10 shrink-0" viewBox="0 0 64 64" fill="none">
-      <rect width="64" height="64" rx="12" fill="#EBF6F6" />
-      <path d="M12 40c8-3 32-3 40 0" stroke="#0E6E73" strokeWidth="3" strokeLinecap="round" />
-      <path d="M12 48c8-2 32-2 40 0" stroke="#FF5A5F" strokeWidth="6" opacity="0.5" strokeLinecap="round" />
-      <path d="M46 16L32 30" stroke="#0E6E73" strokeWidth="3" strokeLinecap="round" />
-      <path d="M35 15l11 11" stroke="#0E6E73" strokeWidth="1.5" />
-      <circle cx="28" cy="34" r="4" fill="#FF5A5F" />
-      <line x1="32" y1="30" x2="28" y2="34" stroke="#FF5A5F" strokeWidth="2" strokeDasharray="2 2" />
-    </svg>
-  );
-}
-
-function GraphicSealants() {
-  return (
-    <svg className="w-10 h-10 shrink-0" viewBox="0 0 64 64" fill="none">
-      <rect width="64" height="64" rx="12" fill="#EBF6F6" />
-      <path d="M18 24c2-4 4-6 8-6h16c4 0 6 2 8 6c2 4 0 12-4 16s-4 5-4 5h-8s0-3-4-5s-10-8-8-16z" stroke="#0E6E73" strokeWidth="2.5" />
-      <path d="M22 22c6-3 14-3 20 0v4c0 6-8 10-10 10s-10-4-10-10v-4z" fill="#2EC4B6" opacity="0.3" stroke="#2EC4B6" strokeWidth="1.5" />
-    </svg>
-  );
-}
-
-function GraphicExtraction() {
-  return (
-    <svg className="w-10 h-10 shrink-0" viewBox="0 0 64 64" fill="none">
-      <rect width="64" height="64" rx="12" fill="#EBF6F6" />
-      <path d="M18 36c0-6 4-8 14-8s14 2 14 8c0 5-3 9-3 9s-3 3-3 5H24s0-4-3-5s-3-4-3-9z" stroke="#0E6E73" strokeWidth="2.5" opacity="0.4" />
-      <path d="M22 22c0-4 3-5 10-5s10 1 10 5c0 3-2 5-2 5s-2 2-2 3H26s0-2-2-3s-2-2-2-5z" stroke="#0E6E73" strokeWidth="2.5" fill="#FFFFFF" />
-      <path d="M32 38V28M29 31l3-3 3 3" stroke="#3D9BFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 
 export default function App() {
   // States
@@ -428,42 +357,42 @@ Time: ${bookingDetails.time}
                     duration: "45 mins",
                     desc: "Precision pulp clearing and bio-compatible sealing using computerized systems.",
                     details: "At Sukruthi Dental and Oral Care, Dr. Mahesh M. S. performs precision root canals using advanced computerized endodontic equipment. The procedure is painless and preserves the structural integrity of your natural tooth.",
-                    illustration: <GraphicRct />,
+                    iconImage: "/assets/icons/icon-rct.png",
                   },
                   {
                     title: "Tooth Whitening",
                     duration: "60 mins",
                     desc: "Medical-grade bleaching activating enamel protection and instant stain removal.",
                     details: "Dissolve stains caused by caffeine, tea, foods, tobacco, or aging. In-clinic light whitening targets 6-8 shades lighter safely inside one hour.",
-                    illustration: <GraphicWhitening />,
+                    iconImage: "/assets/icons/icon-whitening.png",
                   },
                   {
                     title: "Dental Braces Fixing",
                     duration: "Varies",
                     desc: "Skeletal orthodontics with traditional, ceramic, or invisible aligners.",
                     details: "Correct teeth alignment, crowding, spacing, and bite issues. We offer personalized brace options and periodic tracking.",
-                    illustration: <GraphicBraces />,
+                    iconImage: "/assets/icons/icon-braces.png",
                   },
                   {
                     title: "Laser Gum Surgery",
                     duration: "30 mins",
                     desc: "Surgical soft-tissue laser restoration eliminating bleeding and suturing.",
                     details: "Advanced lasers sterilize soft tissues, eliminating scalpels, needles, and stitches. The healing curve is drastically shorter.",
-                    illustration: <GraphicLaser />,
+                    iconImage: "/assets/icons/icon-laser.png",
                   },
                   {
                     title: "Pits & Fissures Sealants",
                     duration: "15 mins",
                     desc: "Thin resin coatings on back molars to safeguard against decay.",
                     details: "Ideal preventive dental protection for school-going children. Keeps Molars shielded from bacteria and plaque build-up.",
-                    illustration: <GraphicSealants />,
+                    iconImage: "/assets/icons/icon-sealants.png",
                   },
                   {
                     title: "Impacted Tooth Extraction",
                     duration: "40 mins",
                     desc: "Removal of wisdom teeth trapped under gums, relieving alignment stress.",
                     details: "Safe surgical tooth extraction mapping root nerves via low-radiation X-rays. Minimizes bone damage and speeds post-op recovery.",
-                    illustration: <GraphicExtraction />,
+                    iconImage: "/assets/icons/icon-extraction.png",
                   },
                 ].map((item, idx) => {
                   const isOpen = openOffering === idx;
@@ -477,8 +406,8 @@ Time: ${bookingDetails.time}
                         className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
                       >
                         <div className="flex items-center gap-4">
-                          <div className="w-12 h-12 rounded-xl shrink-0 flex items-center justify-center bg-siteground overflow-hidden">
-                            {item.illustration}
+                          <div className="w-12 h-12 rounded-xl overflow-hidden shrink-0 border sx-hairline bg-siteground">
+                            <img src={item.iconImage} alt="" className="w-full h-full object-cover" />
                           </div>
                           <div>
                             <h3 className="font-display text-lg font-bold">{item.title}</h3>
