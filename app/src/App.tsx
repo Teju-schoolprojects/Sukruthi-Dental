@@ -54,7 +54,7 @@ export default function App() {
 
     const customIcon = L.divIcon({
       className: "custom-map-marker",
-      html: `<div class="w-8 h-8 rounded-full bg-siteaccent/20 border-2 border-siteaccent flex items-center justify-center"><div class="w-3 h-3 rounded-full bg-siteaccent"></div></div>`,
+      html: `<div class="w-8 h-8 rounded-full bg-siteaccent/20 border-2 border-siteaccent flex items-center justify-center animate-pulse"><div class="w-3 h-3 rounded-full bg-siteaccent"></div></div>`,
       iconSize: [32, 32],
       iconAnchor: [16, 16]
     });
