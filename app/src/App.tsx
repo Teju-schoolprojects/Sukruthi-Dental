@@ -374,17 +374,20 @@ Time: ${bookingDetails.time}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 {[
-                  { step: "01", title: "Diagnostic Mapping", desc: "Detailed examination and imaging to locate precise structural issues." },
-                  { step: "02", title: "Personalized Strategy", desc: "Drafting a timeline that aligns with your timeline, budget and comfort." },
-                  { step: "03", title: "Advanced Treatment", desc: "Pain-free clinical execution under standard sterilization guidelines." },
-                  { step: "04", title: "Lifetime Support", desc: "Coaching and custom prevention schedules to retain your smile." },
+                  { step: "01", title: "Diagnostic Mapping", desc: "Detailed examination and imaging to locate precise structural issues.", img: "/assets/journey-diagnostic.jpg" },
+                  { step: "02", title: "Personalized Strategy", desc: "Drafting a timeline that aligns with your timeline, budget and comfort.", img: "/assets/journey-strategy.jpg" },
+                  { step: "03", title: "Advanced Treatment", desc: "Pain-free clinical execution under standard sterilization guidelines.", img: "/assets/journey-treatment.jpg" },
+                  { step: "04", title: "Lifetime Support", desc: "Coaching and custom prevention schedules to retain your smile.", img: "/assets/journey-support.jpg" },
                 ].map((item, idx) => (
-                  <div key={idx} className="border-t-4 border-siteaccent pt-6 flex flex-col justify-between h-[200px]">
+                  <div key={idx} className="border-t-4 border-siteaccent pt-6 flex flex-col justify-between">
                     <div>
+                      <div className="w-full h-[140px] rounded-xl overflow-hidden mb-4 border sx-hairline">
+                        <img src={item.img} alt={item.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
+                      </div>
                       <span className="font-display text-4xl font-extrabold text-siteaccent/20 block">{item.step}</span>
                       <h3 className="font-display text-lg font-bold mt-2">{item.title}</h3>
                     </div>
-                    <p className="text-xs text-sitemuted leading-relaxed">{item.desc}</p>
+                    <p className="text-xs text-sitemuted leading-relaxed mt-4">{item.desc}</p>
                   </div>
                 ))}
               </div>
