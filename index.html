@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukruthi Dental and Oral Care | Best Dental Clinic in Siddarthanagar, Mysore</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sukruthi Dental and Oral Care offers expert dental treatments in Siddarthanagar, Mysore. Led by Dr. Mahesh M. S. & Dr. Divya Mahesh. Root Canal (RCT), Implants, Laser Dentistry, Ceramic Crowns, and Braces. 4.9/5 rated clinic.">
+    <meta name="keywords" content="Sukruthi Dental, Dental Clinic Mysore, Dentist in Siddarthanagar, Root Canal Doctor Mysore, Dental Implants Mysore, Laser Dentistry, Dr Mahesh MS, Best Dentist Near Me">
+    <meta name="author" content="Sukruthi Dental and Oral Care">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sukruthidental.com/">
+    <meta property="og:title" content="Sukruthi Dental and Oral Care | Top Dental Clinic in Mysore">
+    <meta property="og:description" content="Experience premium dental care in Siddarthanagar, Mysore. Advanced Root Canal treatments, Dental Implants, Laser Surgery, and Orthodontics. Rating 4.9 from 209+ happy patients.">
+    <meta property="og:image" content="assets/hero-clinic.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Sukruthi Dental and Oral Care | Top Dental Clinic in Mysore">
+    <meta property="twitter:description" content="Premium dental treatments by expert surgeons Dr. Mahesh M. S. & Dr. Divya Mahesh. Book online appointments today.">
+    <meta property="twitter:image" content="assets/hero-clinic.jpg">
+
+    <!-- Preconnect Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet.js for Interactive Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org JSON-LD LocalBusiness Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Sukruthi Dental and Oral Care",
+      "image": "assets/hero-clinic.jpg",
+      "@id": "https://www.sukruthidental.com/#clinic",
+      "url": "https://www.sukruthidental.com/",
+      "telephone": "+919844170621",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lalitha Arcade, 1st Floor, Near Above Axis Bank, Siddarthanagar",
+        "addressLocality": "Mysore",
+        "addressRegion": "Karnataka",
+        "postalCode": "570011",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.3037308,
+        "longitude": 76.6905694
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "21:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.justdial.com/Mysore/Sukruthi-Dental-and-Oral-Care-Above-Axis-Bank-Siddarthanagar/0821PX821-X821-170125044505-W6C3_BZDET"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "209"
+      }
+    }
+    </script>
+</head>
+<body class="light-mode">
+    
+    <!-- Custom Scroll Progress Bar -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Top Bar (Quick Contact Info) -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fa-solid fa-phone"></i> Call: <a href="tel:+919844170621">+91 98441 70621</a></span>
+                <span><i class="fa-solid fa-map-location-dot"></i> Siddarthanagar, Mysore</span>
+                <span class="status-badge open"><i class="fa-solid fa-clock"></i> Open Now: 10 AM - 9 PM</span>
+            </div>
+            <div class="top-socials">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light Mode" title="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-brand">Sukruthi</span>
+                    <span class="logo-sub">Dental & Oral Care</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#why-choose" class="nav-link">Why Choose Us</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#faqs" class="nav-link">FAQs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn btn-primary nav-cta-mobile" onclick="openBookingModal()">Book Appointment</button>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-primary nav-cta" id="nav-cta-btn" onclick="openBookingModal()">
+                    <span>Book Appointment</span>
+                    <i class="fa-solid fa-calendar-check"></i>
+                </button>
+                
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-star"><i class="fa-solid fa-star"></i> 4.9 Rating</span>
+                        <span class="badge-separator">|</span>
+                        <span class="badge-reviews">209+ Patients Reviews</span>
+                    </div>
+                    
+                    <h1 class="hero-title">Your Smile is Our <span class="highlight-text">Top Priority</span></h1>
+                    
+                    <p class="hero-description">
+                        Welcome to <strong>Sukruthi Dental and Oral Care</strong>. Under the expert care of <strong>Dr. Mahesh M. S.</strong> & team, we deliver high-quality, comprehensive, and advanced dental services. Experience modern, pain-free treatments customized for your lifetime wellness.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <button class="btn btn-gradient btn-lg" onclick="openBookingModal()">
+                            <span>Book Consultation</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="https://wa.me/919844170621" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Laser Dentistry</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Tooth Whitening</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Braces Fixing</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Ceramic Crowns</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="image-wrapper main-img">
+                        <img src="assets/hero-clinic.jpg" alt="Sukruthi Dental & Oral Care Premium Clinic Interior" class="img-responsive">
+                    </div>
+                    <div class="image-wrapper float-img card-glass animate-float">
+                        <img src="assets/doctor-treatment.jpg" alt="Dr. Mahesh M S performing treatment at Sukruthi Dental" class="img-responsive">
+                        <div class="float-card-info">
+                            <strong>Dr. Mahesh M. S.</strong>
+                            <span>Lead Dental Surgeon</span>
+                        </div>
+                    </div>
+                    <div class="experience-badge card-glass">
+                        <span class="exp-number">8+</span>
+                        <span class="exp-text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,57.05,18.3,90.57,26.85,172.63,47.78,253.23,67.8,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Quick Stats Banner -->
+        <section class="stats-section">
+            <div class="container stats-container">
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+                    <div class="stat-info">
+                        <h3 class="stat-val">4.9</h3>
+                        <p class="stat-label">Google / JustDial Rating</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="stat-info">
+                        <h3 class="stat-val">209+</h3>
+                        <p class="stat-label">Happy Patient Reviews</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-hospital-user"></i></div>
+                    <div class="stat-info">
+                        <h3 class="stat-val">2018</h3>
+                        <p class="stat-label">Established Year</p>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <div class="stat-info">
+                        <h3 class="stat-val">Cashless</h3>
+                        <p class="stat-label">UPI, Cards, NetBanking</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section scroll-spy">
+            <div class="container about-container">
+                <div class="about-visual">
+                    <div class="about-img-frame">
+                        <img src="assets/doctor-treatment.jpg" alt="Dental doctor in clinic" class="img-responsive about-main-img">
+                        <div class="img-overlay-card card-glass animate-float-slow">
+                            <i class="fa-solid fa-heart-pulse text-accent"></i>
+                            <div>
+                                <h4>Expert Care</h4>
+                                <p>Personalized Patient Journey</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-subtitle">Who We Are</span>
+                    <h2 class="section-title">Welcome to <span class="highlight-text">Sukruthi Dental</span></h2>
+                    
+                    <p class="about-lead">
+                        Where your smile is our top priority. We believe in providing dental services that are premium, accessible, and comfortable.
+                    </p>
+                    
+                    <p class="about-text">
+                        With a strict commitment to medical excellence, <strong>Sukruthi Dental and Oral Care</strong> provides complete dental services under one roof. Led by <strong>Dr. Mahesh M. S.</strong>, our clinic operates with modern equipment, sterilization protocols, and advanced procedures to guarantee our patients walk out with a healthy, pain-free smile.
+                    </p>
+
+                    <div class="about-features-grid">
+                        <div class="about-feat-item">
+                            <div class="feat-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                            <div>
+                                <h4>Dr. Mahesh M. S.</h4>
+                                <p>Lead Proprietor & Senior Dental Specialist</p>
+                            </div>
+                        </div>
+                        <div class="about-feat-item">
+                            <div class="feat-icon"><i class="fa-solid fa-user-shield"></i></div>
+                            <div>
+                                <h4>Sterile Environment</h4>
+                                <p>Maximum hygiene and safety standards</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta-box">
+                        <p>Need immediate dental guidance? Our professionals are online to help.</p>
+                        <button class="btn btn-secondary" onclick="openBookingModal()">Meet Our Doctors</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section scroll-spy">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Our Specializations</span>
+                    <h2 class="section-title">Comprehensive <span class="highlight-text">Dental Services</span></h2>
+                    <p class="section-desc">We offer advanced diagnosis and treatments, from preventive care to complex oral surgeries, matching international dental guidelines.</p>
+                </div>
+
+                <!-- Tabs Filter -->
+                <div class="services-tabs">
+                    <button class="tab-btn active" data-category="all">All Services</button>
+                    <button class="tab-btn" data-category="treatment">Treatments</button>
+                    <button class="tab-btn" data-category="surgery">Surgeries</button>
+                    <button class="tab-btn" data-category="procedures">Procedures</button>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="services-grid" id="services-grid">
+                    <!-- Service cards will be rendered dynamically via JS, fallback for SEO below -->
+                    <div class="service-card card-glass" data-category="treatment">
+                        <div class="service-card-image">
+                            <img src="assets/service-rct.jpg" alt="Root Canal Treatment (RCT) procedure">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="card-icon"><i class="fa-solid fa-house-medical-circle-exclamation"></i></div>
+                            <h3>Root Canal Treatment (RCT)</h3>
+                            <p>Save infected or decayed teeth from extraction with precise, painless Root Canal Therapy.</p>
+                            <button class="service-link" onclick="openServiceDetail('RCT')">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                    <div class="service-card card-glass" data-category="treatment">
+                        <div class="service-card-image">
+                            <img src="assets/service-whitening.jpg" alt="Tooth Whitening & bleaching procedure">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <h3>Tooth Whitening</h3>
+                            <p>Brighten your natural teeth and remove stains with medical-grade professional whitening.</p>
+                            <button class="service-link" onclick="openServiceDetail('Whitening')">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                    <div class="service-card card-glass" data-category="procedures">
+                        <div class="service-card-image">
+                            <img src="assets/service-braces.jpg" alt="Dental Braces Fixing & Orthodontic Alignment">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="card-icon"><i class="fa-solid fa-teeth"></i></div>
+                            <h3>Dental Braces Fixing</h3>
+                            <p>Correct alignment issues, crowding, or gaps with modern metal, ceramic, or clear braces.</p>
+                            <button class="service-link" onclick="openServiceDetail('Braces')">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                    <div class="service-card card-glass" data-category="surgery">
+                        <div class="service-card-image">
+                            <img src="assets/service-laser.jpg" alt="Laser Gum & Dental Surgery">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="card-icon"><i class="fa-solid fa-burst"></i></div>
+                            <h3>Laser Gum Surgery</h3>
+                            <p>Minimize bleeding, swelling, and healing times with advanced laser dental technologies.</p>
+                            <button class="service-link" onclick="openServiceDetail('Laser')">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                    <div class="service-card card-glass" data-category="procedures">
+                        <div class="service-card-image">
+                            <img src="assets/service-sealants.jpg" alt="Pits and Fissures Dental Sealants">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h3>Pits And Fissures Sealants</h3>
+                            <p>Preventative thin resin coatings applied to chewing surfaces to protect against cavity decay.</p>
+                            <button class="service-link" onclick="openServiceDetail('Pits')">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                    <div class="service-card card-glass" data-category="surgery">
+                        <div class="service-card-image">
+                            <img src="assets/service-extraction.jpg" alt="Impacted Tooth wisdom Extraction surgery">
+                        </div>
+                        <div class="service-card-content">
+                            <div class="card-icon"><i class="fa-solid fa-syringe"></i></div>
+                            <h3>Impacted Tooth Extraction</h3>
+                            <p>Safe extraction of wisdom teeth or teeth trapped below gums causing pain and alignment concerns.</p>
+                            <button class="service-link" onclick="openServiceDetail('Impacted')">Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-footer text-center">
+                    <p>Have a custom dental requirement? We perform over 40+ dental services and custom reconstructions.</p>
+                    <button class="btn btn-primary" onclick="openBookingModal()">Consult For Custom Needs</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose" class="why-section scroll-spy">
+            <div class="container why-container">
+                <div class="why-content">
+                    <span class="section-subtitle">Key Highlights</span>
+                    <h2 class="section-title">Why Choose <span class="highlight-text">Sukruthi Dental?</span></h2>
+                    <p class="why-intro-text">When it comes to your oral health, choosing the right dental clinic is crucial. We offer unmatched care tailored to family and cosmetic needs.</p>
+
+                    <div class="why-grid">
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                            <div class="why-info">
+                                <h3>Expert Team</h3>
+                                <p>Our clinic boasts highly skilled and experienced dental surgeons led by Dr. Mahesh M. S. who keep up with cutting-edge dental developments.</p>
+                            </div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fa-solid fa-circle-h"></i></div>
+                            <div class="why-info">
+                                <h3>State-of-the-Art Facilities</h3>
+                                <p>Equipped with low-radiation X-Ray machines, computerized treatment planning, advanced laser systems, and high-performance dental chairs.</p>
+                            </div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <div class="why-info">
+                                <h3>Personalized Approach</h3>
+                                <p>We don't believe in one-size-fits-all. Every patient receives a dedicated diagnosis and highly tailored care schedules to suit their timeline and budget.</p>
+                            </div>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fa-solid fa-briefcase-medical"></i></div>
+                            <div class="why-info">
+                                <h3>Comprehensive Care</h3>
+                                <p>From kids' dental hygiene and sealants to dental implants and senior crowns, the entire family gets complete treatment under a single roof.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-visual">
+                    <div class="why-image-card">
+                        <img src="assets/happy-smile.jpg" alt="Patient smiling with white healthy teeth" class="img-responsive why-img">
+                        <div class="why-overlay-badge card-glass">
+                            <div class="rating-text">
+                                <span class="rating-num">4.9</span>
+                                <div class="rating-stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Patient Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clinic Gallery Section -->
+        <section id="gallery" class="gallery-section scroll-spy">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Take a Look Inside</span>
+                    <h2 class="section-title">Our Clinic <span class="highlight-text">Gallery</span></h2>
+                    <p class="section-desc">Tour our clean, modern waiting lounge, pediatric-friendly treatment room, state-of-the-art dental chairs, and sterilizing units.</p>
+                </div>
+
+                <div class="gallery-tabs">
+                    <button class="gallery-tabactive" data-filter="all">All Photos</button>
+                    <button class="gallery-tab" data-filter="interior">Interior</button>
+                    <button class="gallery-tab" data-filter="exterior">Exterior</button>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Photo cards -->
+                    <div class="gallery-item cursor-pointer" data-category="interior" onclick="openLightbox(0)">
+                        <img src="assets/hero-clinic.jpg" alt="Dental clinic modern examination room with pink design details" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                            <span>View Interior</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="interior" onclick="openLightbox(1)">
+                        <img src="assets/doctor-treatment.jpg" alt="Professional dental chair setup" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                            <span>View Equipment</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item cursor-pointer" data-category="interior" onclick="openLightbox(2)">
+                        <img src="assets/happy-smile.jpg" alt="Happy Indian female patient showing off a restored, healthy smile" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                            <span>View Smile Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials/Reviews Section -->
+        <section id="reviews" class="reviews-section scroll-spy">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Patient Testimonials</span>
+                    <h2 class="section-title">What Our <span class="highlight-text">Patients Say</span></h2>
+                    <p class="section-desc">Read honest reviews from patients who experienced our professional care and clinic atmosphere.</p>
+                </div>
+
+                <div class="reviews-slider-container">
+                    <div class="reviews-track" id="reviews-track">
+                        <!-- Review Card 1 -->
+                        <div class="review-card-item card-glass">
+                            <div class="review-header">
+                                <div class="review-avatar">BJ</div>
+                                <div class="review-meta">
+                                    <h4>B Janardhanan</h4>
+                                    <span class="review-date">3rd November, 2020</span>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "Thorough professional and cordial approach were observed during the diagnosis, evaluation, advice listing options and treatment. The ambience in the clinic was good. COVID-19 norms were strictly adhered to and cashless Scan & Pay facility was available. Best Wishes!"
+                            </p>
+                            <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Patient Review</span>
+                        </div>
+
+                        <!-- Review Card 2 -->
+                        <div class="review-card-item card-glass">
+                            <div class="review-header">
+                                <div class="review-avatar">PT</div>
+                                <div class="review-meta">
+                                    <h4>Patil</h4>
+                                    <span class="review-date">4th February, 2021</span>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "Excellent doctor. Very patient and explained the whole tooth extraction procedure before beginning. Felt zero pain. Highly recommend Sukruthi Dental clinic for anyone in Siddarthanagar!"
+                            </p>
+                            <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Patient Review</span>
+                        </div>
+
+                        <!-- Review Card 3 -->
+                        <div class="review-card-item card-glass">
+                            <div class="review-header">
+                                <div class="review-avatar">AS</div>
+                                <div class="review-meta">
+                                    <h4>Ananth Sharma</h4>
+                                    <span class="review-date">12th August, 2023</span>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">
+                                "Got my root canal done by Dr. Mahesh. He is highly skilled. The clinic is neat, well-maintained and clean. Best dental clinic in Mysore with very reasonable fees. Cashless payment option was smooth."
+                            </p>
+                            <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Patient Review</span>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="control-btn prev-btn" id="prev-review-btn" aria-label="Previous Review"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="slider-dots" id="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="control-btn next-btn" id="next-review-btn" aria-label="Next Review"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faqs" class="faq-section scroll-spy">
+            <div class="container faq-container">
+                <div class="faq-intro">
+                    <span class="section-subtitle">FAQ</span>
+                    <h2 class="section-title">Frequently Asked <span class="highlight-text">Questions</span></h2>
+                    <p>Have questions about treatments, fees, timings, or bookings? We have gathered answers to help you. If you still need help, feel free to contact our office.</p>
+                    <a href="tel:+919844170621" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call Clinic Desk</a>
+                </div>
+
+                <div class="faq-list">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How can I contact Sukruthi Dental and Oral Care for appointments?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can contact Sukruthi Dental and Oral Care by calling our primary desk at <strong>+91 98441 70621</strong> or alternative helpline <strong>+91 85115 23134</strong>. You can also book an appointment online via our booking form on this website or chat directly through WhatsApp.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What are the working hours of the clinic?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our clinic is open <strong>Monday to Saturday from 10:00 AM to 9:00 PM</strong>. We are closed on Sundays. Appointments are highly recommended to avoid longer wait times.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What payment methods do you accept?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We support a variety of payment options for cashless and contact-free payments including: UPI (GPay, PhonePe, Paytm), Visa/Master/Rupay debit and credit cards, Net Banking, cash, and cheques/DD.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is a Post & Core Crown procedure?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For teeth that are severely damaged or have undergone root canals, a post & core crown procedure rebuilds the tooth structure. A small post is inserted into the root canal to secure a core anchor, upon which a durable ceramic/metal crown is fixed to restore standard bite strength and aesthetics.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Where is the clinic located?</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We are located on the <strong>1st Floor of Lalitha Arcade, Siddarthanagar, Mysore, 570011</strong>. We are conveniently situated directly above Axis Bank. Landmark: Above Axis Bank.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-spy">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Reach Us Today</span>
+                    <h2 class="section-title">Contact & <span class="highlight-text">Find Us</span></h2>
+                    <p class="section-desc">Visit our clinic or call us to plan your appointment. You can find our directions, phone, and maps below.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-cards">
+                        <!-- Address Card -->
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-details">
+                                <h3>Clinic Address</h3>
+                                <p>Lalitha Arcade, 1st Floor, Siddarthanagar,<br>Near Above Axis Bank, Mysore, Karnataka - 570011</p>
+                                <span class="landmark-text"><strong>Landmark:</strong> Above Axis Bank</span>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="info-details">
+                                <h3>Phone / Enquiries</h3>
+                                <p>Primary: <a href="tel:+919844170621">+91 98441 70621</a></p>
+                                <p>Alternative: <a href="tel:+918511523134">+91 85115 23134</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Hours Card -->
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                            <div class="info-details">
+                                <h3>Clinic Hours</h3>
+                                <p>Monday – Saturday: 10:00 AM – 9:00 PM</p>
+                                <p class="text-accent font-semibold">Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Box -->
+                    <div class="map-container-box">
+                        <div id="map"></div>
+                        <a href="https://maps.google.com/?q=12.3037308,76.6905694" target="_blank" rel="noopener noreferrer" class="map-link-btn btn btn-secondary">
+                            <i class="fa-solid fa-directions"></i> Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-tooth"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-brand">Sukruthi</span>
+                        <span class="logo-sub">Dental & Oral Care</span>
+                    </div>
+                </a>
+                <p class="footer-desc">Professional and compassionate oral healthcare clinic serving Siddarthanagar and surrounding regions in Mysore since 2018.</p>
+                <div class="footer-socials">
+                    <a href="https://wa.me/919844170621" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.justdial.com/Mysore/Sukruthi-Dental-and-Oral-Care-Above-Axis-Bank-Siddarthanagar/0821PX821-X821-170125044505-W6C3_BZDET" class="social-icon" aria-label="JustDial" target="_blank"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Navigation</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Clinic</a></li>
+                    <li><a href="#services">Specialized Services</a></li>
+                    <li><a href="#why-choose">Why Choose Us</a></li>
+                    <li><a href="#gallery">Clinic Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Our Treatments</h3>
+                <ul>
+                    <li><a href="#services" onclick="openServiceDetail('RCT')">Root Canal Treatment</a></li>
+                    <li><a href="#services" onclick="openServiceDetail('Braces')">Braces Fixing</a></li>
+                    <li><a href="#services" onclick="openServiceDetail('Laser')">Laser Dentistry</a></li>
+                    <li><a href="#services" onclick="openServiceDetail('Whitening')">Tooth Whitening</a></li>
+                    <li><a href="#services" onclick="openServiceDetail('Pits')">Pits & Fissures Sealants</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Emergency Contact</h3>
+                <p>Call our duty specialist for intense dental pains or trauma:</p>
+                <a href="tel:+919844170621" class="footer-phone"><i class="fa-solid fa-phone"></i> +91 98441 70621</a>
+                <span class="footer-established">Established in 2018 • Proprietorship</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 Sukruthi Dental and Oral Care. All rights reserved.</p>
+                <p>Designed with care for a healthy smile.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX / PHOTO SLIDESHOW MODAL -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content-wrapper">
+            <button class="lightbox-prev" onclick="changeLightboxSlide(-1)">&#10094;</button>
+            <img id="lightbox-img" src="" alt="Lightbox View" class="lightbox-img">
+            <button class="lightbox-next" onclick="changeLightboxSlide(1)">&#10095;</button>
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- BOOKING APPOINTMENT MODAL -->
+    <div id="booking-modal" class="booking-modal">
+        <div class="booking-modal-content card-glass">
+            <span class="booking-close" onclick="closeBookingModal()">&times;</span>
+            <div class="booking-header">
+                <i class="fa-solid fa-calendar-check text-primary"></i>
+                <div>
+                    <h2>Book Your Appointment</h2>
+                    <p>Provide your details to register a slot. We will confirm shortly.</p>
+                </div>
+            </div>
+            
+            <form id="booking-form" onsubmit="handleBookingSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="booking-name"><i class="fa-solid fa-user"></i> Full Name <span class="required">*</span></label>
+                        <input type="text" id="booking-name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-phone"><i class="fa-solid fa-phone"></i> Contact Phone <span class="required">*</span></label>
+                        <input type="tel" id="booking-phone" required pattern="[0-9]{10}" placeholder="9844170621">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="booking-service"><i class="fa-solid fa-stethoscope"></i> Treatment/Service Needed</label>
+                        <select id="booking-service">
+                            <option value="General Consultation">General Consultation</option>
+                            <option value="Root Canal Treatment (RCT)">Root Canal Treatment (RCT)</option>
+                            <option value="Tooth Whitening">Tooth Whitening</option>
+                            <option value="Dental Braces Fixing">Dental Braces Fixing</option>
+                            <option value="Laser Dentistry">Laser Dentistry</option>
+                            <option value="Crowns & Bridges">Ceramic Crowns & Bridges</option>
+                            <option value="Tooth Extraction">Tooth Extraction</option>
+                            <option value="Pits And Fissures Sealants">Pits & Fissures Sealants</option>
+                            <option value="Dental Implants">Dental Implants</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-doctor"><i class="fa-solid fa-user-doctor"></i> Preferred Dentist</label>
+                        <select id="booking-doctor">
+                            <option value="Dr Mahesh M S">Dr. Mahesh M. S.</option>
+                            <option value="Dr Divya Mahesh">Dr. Divya Mahesh</option>
+                            <option value="Any Specialist">Any Available Specialist</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="booking-date"><i class="fa-solid fa-calendar-days"></i> Booking Date <span class="required">*</span></label>
+                        <input type="date" id="booking-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-time"><i class="fa-solid fa-clock"></i> Preferred Time Window <span class="required">*</span></label>
+                        <select id="booking-time" required>
+                            <option value="" disabled selected>Select slot window</option>
+                            <option value="10:00 AM - 12:00 PM">Morning (10:00 AM - 12:00 PM)</option>
+                            <option value="12:00 PM - 02:00 PM">Midday (12:00 PM - 02:00 PM)</option>
+                            <option value="02:00 PM - 04:00 PM">Afternoon (02:00 PM - 04:00 PM)</option>
+                            <option value="04:00 PM - 06:00 PM">Evening (04:00 PM - 06:00 PM)</option>
+                            <option value="06:00 PM - 08:30 PM">Night (06:00 PM - 08:30 PM)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-message"><i class="fa-solid fa-comment-medical"></i> Additional Notes or Symptoms</label>
+                    <textarea id="booking-message" rows="3" placeholder="Explain details if any (e.g. pain in back molar, broken tooth, regular scaling checkup)..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline" onclick="closeBookingModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Register Slot</span>
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Success message wrapper -->
+            <div id="booking-success-message" class="booking-success-container hidden">
+                <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <h3>Appointment Pre-Registered!</h3>
+                <p>Thank you for choosing Sukruthi Dental. Your slot details have been recorded.</p>
+                
+                <div class="receipt-card">
+                    <h4>Pre-Registration Receipt</h4>
+                    <p><strong>Patient Name:</strong> <span id="receipt-name">-</span></p>
+                    <p><strong>Service:</strong> <span id="receipt-service">-</span></p>
+                    <p><strong>Dentist:</strong> <span id="receipt-doctor">-</span></p>
+                    <p><strong>Date & Time:</strong> <span id="receipt-datetime">-</span></p>
+                    <p><strong>Registration ID:</strong> <span id="receipt-id">-</span></p>
+                </div>
+                
+                <p class="receipt-note"><i class="fa-solid fa-info-circle"></i> We will contact you at <span id="receipt-phone"></span> via SMS/Call to confirm your final booking time.</p>
+                
+                <div class="success-actions">
+                    <button class="btn btn-secondary" onclick="downloadReceipt()"><i class="fa-solid fa-download"></i> Save Receipt</button>
+                    <button class="btn btn-primary" onclick="resetAndCloseBooking()">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DYNAMIC SERVICE DETAIL MODAL -->
+    <div id="service-modal" class="service-modal">
+        <div class="service-modal-content card-glass">
+            <span class="service-close" onclick="closeServiceModal()">&times;</span>
+            <div class="service-modal-body">
+                <div class="service-modal-banner" id="modal-service-banner">
+                    <!-- Dynamic service image -->
+                </div>
+                <div class="service-modal-icon" id="modal-service-icon"><i class="fa-solid fa-tooth"></i></div>
+                <h2 id="modal-service-title">Service Details</h2>
+                <div id="modal-service-desc">
+                    <!-- Dynamic description text -->
+                </div>
+                <div class="modal-service-actions">
+                    <button class="btn btn-outline" onclick="closeServiceModal()">Back to Services</button>
+                    <button class="btn btn-primary" onclick="bookFromServiceModal()">Book Appointment for this service</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS Map dependency -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

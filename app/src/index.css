@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Sukruthi Dental Cinematic Site styles Layer (Tailwind v4)
+   ========================================================================== */
+
+@font-face {
+  font-family: "SiteDisplay";
+  src: url("/fonts/display-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SiteDisplay";
+  src: url("/fonts/display-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SiteDisplay";
+  src: url("/fonts/display-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SiteBody";
+  src: url("/fonts/body-400.woff2") format("woff2");
+  font-weight: 400 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-siteground: #F7F9F8;
+  --color-sitesurface: #FFFFFF;
+  --color-siteink: #10221F;
+  --color-sitemuted: #5C6F6B;
+  --color-siteaccent: #0E6E73;
+  --font-display: "SiteDisplay", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "SiteBody", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Tailwind v4 custom utilities */
+.sx-hairline {
+  border-color: color-mix(in srgb, var(--color-siteink) 14%, transparent);
+}
+
+.sx-wash {
+  background-color: color-mix(in srgb, var(--color-siteaccent) 7%, transparent);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-siteaccent) 20%, transparent);
+}
+
+@keyframes sx-rise {
+  from {
+    transform: translateY(0.55em);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.sx-rise {
+  animation: sx-rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sx-rise {
+    animation: none;
+  }
+}
+
+/* Custom layout resets */
+html {
+  background-color: var(--color-siteground) !important;
+  color: var(--color-siteink) !important;
+  color-scheme: light !important;
+}
+
+body {
+  background-color: var(--color-siteground) !important;
+  color: var(--color-siteink) !important;
+}
