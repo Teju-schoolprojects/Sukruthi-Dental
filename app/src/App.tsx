@@ -216,7 +216,7 @@ Time: ${bookingDetails.time}
                   Our Masterpiece.
                 </h1>
                 <p className="text-lg md:text-xl text-sitemuted mb-8 max-w-xl">
-                  Experience clinical perfection led by Dr. Mahesh M. S. and specialized surgeons in Siddarthanagar, Mysore.
+                  Experience clinical perfection led by <span className="whitespace-nowrap">Dr. Mahesh M. S.</span> and specialized surgeons in <span className="whitespace-nowrap">Siddarthanagar, Mysore</span>.
                 </p>
                 <button
                   onClick={() => setBookingModal(true)}
@@ -278,7 +278,7 @@ Time: ${bookingDetails.time}
                       ))}
                     </h1>
                     <p className="text-base md:text-xl text-sitemuted mb-8 max-w-xl sx-rise" style={{ animationDelay: "1.2s" }}>
-                      Experience clinical perfection led by Dr. Mahesh M. S. and specialized surgeons in Siddarthanagar, Mysore.
+                      Experience clinical perfection led by <span className="whitespace-nowrap">Dr. Mahesh M. S.</span> and specialized surgeons in <span className="whitespace-nowrap">Siddarthanagar, Mysore</span>.
                     </p>
                     <button
                       onClick={() => setBookingModal(true)}
