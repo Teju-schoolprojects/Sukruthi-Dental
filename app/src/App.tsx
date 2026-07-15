@@ -204,7 +204,7 @@ Time: ${bookingDetails.time}
           {reduced ? (
             <section className="relative h-dvh flex items-center justify-start px-6 md:px-24">
               <img
-                src="/assets/hero-final.jpg"
+                src="assets/hero-final.jpg"
                 alt="Clean modern clinic environment at Sukruthi Dental"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -231,8 +231,8 @@ Time: ${bookingDetails.time}
               <div className="sticky top-0 h-dvh overflow-hidden bg-siteground">
                 <div ref={heroMaskRef} className="absolute inset-0 will-change-[clip-path]">
                   <FilmVideo
-                    src="/assets/film-hero.mp4"
-                    poster="/assets/hero-poster.jpg"
+                    src="assets/film-hero.mp4"
+                    poster="assets/hero-poster.jpg"
                     className="h-full w-full object-cover"
                     label="Pristine dental examination room details"
                   />
@@ -323,8 +323,8 @@ Time: ${bookingDetails.time}
             <div className="sticky top-0 h-dvh overflow-hidden">
               <div ref={spaceFilmRef} className="absolute inset-0 w-full h-full">
                 <FilmVideo
-                  src="/assets/film-space.mp4"
-                  poster="/assets/hero-clinic.jpg"
+                  src="assets/film-space.mp4"
+                  poster="assets/hero-clinic.jpg"
                   className="h-full w-full object-cover"
                   label="Calming layout of reception and clinical zone"
                 />
@@ -351,10 +351,10 @@ Time: ${bookingDetails.time}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 {[
-                  { step: "01", title: "Diagnostic Mapping", desc: "Detailed examination and imaging to locate precise structural issues.", img: "/assets/journey-diagnostic.jpg" },
-                  { step: "02", title: "Personalized Strategy", desc: "Drafting a timeline that aligns with your timeline, budget and comfort.", img: "/assets/journey-strategy.jpg" },
-                  { step: "03", title: "Advanced Treatment", desc: "Pain-free clinical execution under standard sterilization guidelines.", img: "/assets/journey-treatment.jpg" },
-                  { step: "04", title: "Lifetime Support", desc: "Coaching and custom prevention schedules to retain your smile.", img: "/assets/journey-support.jpg" },
+                  { step: "01", title: "Diagnostic Mapping", desc: "Detailed examination and imaging to locate precise structural issues.", img: "assets/journey-diagnostic.jpg" },
+                  { step: "02", title: "Personalized Strategy", desc: "Drafting a timeline that aligns with your timeline, budget and comfort.", img: "assets/journey-strategy.jpg" },
+                  { step: "03", title: "Advanced Treatment", desc: "Pain-free clinical execution under standard sterilization guidelines.", img: "assets/journey-treatment.jpg" },
+                  { step: "04", title: "Lifetime Support", desc: "Coaching and custom prevention schedules to retain your smile.", img: "assets/journey-support.jpg" },
                 ].map((item, idx) => (
                   <div key={idx} className="border-t-4 border-siteaccent pt-6 flex flex-col justify-between">
                     <div>
@@ -385,48 +385,48 @@ Time: ${bookingDetails.time}
                     duration: "45 mins",
                     desc: "Precision pulp clearing and bio-compatible sealing using computerized systems.",
                     details: "At Sukruthi Dental and Oral Care, Dr. Mahesh M. S. performs precision root canals using advanced computerized endodontic equipment. The procedure is painless and preserves the structural integrity of your natural tooth.",
-                    iconImage: "/assets/icons/icon-rct.png",
-                    serviceImage: "/assets/service-rct.jpg",
+                    iconImage: "assets/icons/icon-rct.png",
+                    serviceImage: "assets/service-rct.jpg",
                   },
                   {
                     title: "Tooth Whitening",
                     duration: "60 mins",
                     desc: "Medical-grade bleaching activating enamel protection and instant stain removal.",
                     details: "Dissolve stains caused by caffeine, tea, foods, tobacco, or aging. In-clinic light whitening targets 6-8 shades lighter safely inside one hour.",
-                    iconImage: "/assets/icons/icon-whitening.png",
-                    serviceImage: "/assets/service-whitening.jpg",
+                    iconImage: "assets/icons/icon-whitening.png",
+                    serviceImage: "assets/service-whitening.jpg",
                   },
                   {
                     title: "Dental Braces Fixing",
                     duration: "Varies",
                     desc: "Skeletal orthodontics with traditional, ceramic, or invisible aligners.",
                     details: "Correct teeth alignment, crowding, spacing, and bite issues. We offer personalized brace options and periodic tracking.",
-                    iconImage: "/assets/icons/icon-braces.png",
-                    serviceImage: "/assets/service-braces.jpg",
+                    iconImage: "assets/icons/icon-braces.png",
+                    serviceImage: "assets/service-braces.jpg",
                   },
                   {
                     title: "Laser Gum Surgery",
                     duration: "30 mins",
                     desc: "Surgical soft-tissue laser restoration eliminating bleeding and suturing.",
                     details: "Advanced lasers sterilize soft tissues, eliminating scalpels, needles, and stitches. The healing curve is drastically shorter.",
-                    iconImage: "/assets/icons/icon-laser.png",
-                    serviceImage: "/assets/service-laser.jpg",
+                    iconImage: "assets/icons/icon-laser.png",
+                    serviceImage: "assets/service-laser.jpg",
                   },
                   {
                     title: "Pits & Fissures Sealants",
                     duration: "15 mins",
                     desc: "Thin resin coatings on back molars to safeguard against decay.",
                     details: "Ideal preventive dental protection for school-going children. Keeps Molars shielded from bacteria and plaque build-up.",
-                    iconImage: "/assets/icons/icon-sealants.png",
-                    serviceImage: "/assets/service-sealants.jpg",
+                    iconImage: "assets/icons/icon-sealants.png",
+                    serviceImage: "assets/service-sealants.jpg",
                   },
                   {
                     title: "Impacted Tooth Extraction",
                     duration: "40 mins",
                     desc: "Removal of wisdom teeth trapped under gums, relieving alignment stress.",
                     details: "Safe surgical tooth extraction mapping root nerves via low-radiation X-rays. Minimizes bone damage and speeds post-op recovery.",
-                    iconImage: "/assets/icons/icon-extraction.png",
-                    serviceImage: "/assets/service-extraction.jpg",
+                    iconImage: "assets/icons/icon-extraction.png",
+                    serviceImage: "assets/service-extraction.jpg",
                   },
                 ].map((item, idx) => {
                   const isOpen = openOffering === idx;
@@ -514,8 +514,8 @@ Time: ${bookingDetails.time}
               </div>
               <div className="h-[300px] md:h-[450px] rounded-3xl overflow-hidden shadow-xl border sx-hairline">
                 <FilmVideo
-                  src="/assets/film-tech.mp4"
-                  poster="/assets/doctor-treatment.jpg"
+                  src="assets/film-tech.mp4"
+                  poster="assets/doctor-treatment.jpg"
                   className="w-full h-full object-cover"
                   label="Close up of advanced digital diagnostic tools"
                 />
@@ -550,7 +550,7 @@ Time: ${bookingDetails.time}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-32 h-32 rounded-2xl overflow-hidden bg-siteground shrink-0 border sx-hairline">
-                    <img src="/assets/doctor-treatment.jpg" alt="Clinical Specialist Profile" className="w-full h-full object-cover" />
+                    <img src="assets/doctor-treatment.jpg" alt="Clinical Specialist Profile" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h3 className="font-display text-2xl font-bold">Dr. Mahesh M. S.</h3>
@@ -563,7 +563,7 @@ Time: ${bookingDetails.time}
 
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-32 h-32 rounded-2xl overflow-hidden bg-siteground shrink-0 border sx-hairline">
-                    <img src="/assets/doctor-treatment.jpg" alt="Specialist Orthodontic Lead Profile" className="w-full h-full object-cover object-[center_65%]" />
+                    <img src="assets/doctor-treatment.jpg" alt="Specialist Orthodontic Lead Profile" className="w-full h-full object-cover object-[center_65%]" />
                   </div>
                   <div>
                     <h3 className="font-display text-2xl font-bold">Dr. Divya Mahesh</h3>
@@ -609,8 +609,8 @@ Time: ${bookingDetails.time}
               <div ref={careImgRef} className="md:col-span-7 md:order-1 relative">
                 <div className="w-[85%] h-[350px] md:h-[480px] rounded-3xl overflow-hidden shadow-xl border sx-hairline">
                   <FilmVideo
-                    src="/assets/film-care.mp4"
-                    poster="/assets/doctor-treatment.jpg"
+                    src="assets/film-care.mp4"
+                    poster="assets/doctor-treatment.jpg"
                     className="w-full h-full object-cover"
                     label="Smiling child holding model teeth setup"
                   />
@@ -660,8 +660,8 @@ Time: ${bookingDetails.time}
             <div className="mx-auto max-w-[1360px] px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="h-[400px] md:h-[550px] rounded-3xl overflow-hidden shadow-xl border sx-hairline">
                 <FilmVideo
-                  src="/assets/film-whitening.mp4"
-                  poster="/assets/service-whitening.jpg"
+                  src="assets/film-whitening.mp4"
+                  poster="assets/service-whitening.jpg"
                   className="w-full h-full object-cover object-[center_65%]"
                   label="Indian patient displaying perfectly aligned white teeth"
                 />
@@ -785,8 +785,8 @@ Time: ${bookingDetails.time}
           <section id="visit" className="relative overflow-hidden min-h-dvh flex items-center">
             <div className="absolute inset-0 w-full h-full">
               <FilmVideo
-                src="/assets/film-finale.mp4"
-                poster="/assets/happy-smile.jpg"
+                src="assets/film-finale.mp4"
+                poster="assets/happy-smile.jpg"
                 className="w-full h-full object-cover"
                 label="Clinic exterior environment and medical specialist crew"
               />
@@ -934,3 +934,4 @@ Time: ${bookingDetails.time}
     </SmoothScroll>
   );
 }
+
