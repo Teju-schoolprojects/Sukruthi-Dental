@@ -563,7 +563,7 @@ Time: ${bookingDetails.time}
 
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="w-32 h-32 rounded-2xl overflow-hidden bg-siteground shrink-0 border sx-hairline">
-                    <img src="assets/doctor-treatment.jpg" alt="Specialist Orthodontic Lead Profile" className="w-full h-full object-cover object-[center_65%]" />
+                    <img src="assets/doctor-female.jpg" alt="Specialist Orthodontic Lead Profile" className="w-full h-full object-cover object-[center_65%]" />
                   </div>
                   <div>
                     <h3 className="font-display text-2xl font-bold">Dr. Divya Mahesh</h3>
